@@ -1,0 +1,30 @@
+whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o: \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-alloc.c \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/../include/ggml-alloc.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/../include/ggml.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdbool.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stddef.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/__stddef_max_align_t.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
+  /usr/share/emscripten/cache/sysroot/include/stdint.h \
+  /usr/share/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /usr/share/emscripten/cache/sysroot/include/bits/stdint.h \
+  /usr/share/emscripten/cache/sysroot/include/stdio.h \
+  /usr/share/emscripten/cache/sysroot/include/wasi/api.h \
+  /usr/share/emscripten/cache/sysroot/include/features.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/./ggml-backend-impl.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/../include/ggml-backend.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/./ggml-impl.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/../include/gguf.h \
+  /usr/share/emscripten/cache/sysroot/include/assert.h \
+  /usr/share/emscripten/cache/sysroot/include/compat/math.h \
+  /usr/share/emscripten/cache/sysroot/include/math.h \
+  /usr/share/emscripten/cache/sysroot/include/compat/stdlib.h \
+  /usr/share/emscripten/cache/sysroot/include/stdlib.h \
+  /usr/share/emscripten/cache/sysroot/include/compat/string.h \
+  /usr/share/emscripten/cache/sysroot/include/string.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/limits.h \
+  /usr/share/emscripten/cache/sysroot/include/limits.h \
+  /usr/share/emscripten/cache/sysroot/include/bits/limits.h \
+  /usr/share/emscripten/cache/sysroot/include/compat/stdarg.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdarg.h

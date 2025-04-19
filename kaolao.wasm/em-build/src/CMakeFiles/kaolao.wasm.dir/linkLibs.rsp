@@ -1,0 +1,1 @@
+ ../whisper.cpp/src/libwhisper.a ../whisper.cpp/ggml/src/libggml.a "../whisper.cpp/ggml/src/libggml-cpu.a" "../whisper.cpp/ggml/src/libggml-base.a" 

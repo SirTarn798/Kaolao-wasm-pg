@@ -1,0 +1,504 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: Emscripten - 1 - x86
+      The host system is: Linux - 5.15.167.4-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "whisper.cpp/ggml/CMakeLists.txt:227 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-Xrkk7L"
+      binary: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-Xrkk7L"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "   -pthread"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -s TOTAL_STACK=5242880"
+      CMAKE_MODULE_PATH: "/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/cmake/"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-Xrkk7L'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_12fc1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_12fc1.dir/build.make CMakeFiles/cmTC_12fc1.dir/build
+        gmake[1]: Entering directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-Xrkk7L'
+        Building C object CMakeFiles/cmTC_12fc1.dir/src.c.o
+        /usr/bin/emcc -DCMAKE_HAVE_LIBC_PTHREAD  -pthread  -std=gnu11 -MD -MT CMakeFiles/cmTC_12fc1.dir/src.c.o -MF CMakeFiles/cmTC_12fc1.dir/src.c.o.d -o CMakeFiles/cmTC_12fc1.dir/src.c.o -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-Xrkk7L/src.c
+        Linking C executable cmTC_12fc1.js
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12fc1.dir/link.txt --verbose=1
+        /usr/bin/emcc    -pthread   -s TOTAL_STACK=5242880  @CMakeFiles/cmTC_12fc1.dir/objects1.rsp -o cmTC_12fc1.js 
+        gmake[1]: Leaving directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-Xrkk7L'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "whisper.cpp/ggml/src/ggml-cpu/CMakeLists.txt:57 (find_package)"
+      - "whisper.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-X5gJE8"
+      binary: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-X5gJE8"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "   -pthread"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -s TOTAL_STACK=5242880"
+      CMAKE_MODULE_PATH: "/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmplibomp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-X5gJE8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6b266/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6b266.dir/build.make CMakeFiles/cmTC_6b266.dir/build
+        gmake[1]: Entering directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-X5gJE8'
+        Building C object CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o
+        /usr/bin/emcc   -pthread -fopenmp=libomp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-X5gJE8/OpenMPTryFlag.c
+         "/usr/bin/clang-15" -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -fopenmp=libomp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-X5gJE8/OpenMPTryFlag.c -o CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o
+        Ubuntu clang version 15.0.7
+        Target: wasm32-unknown-emscripten
+        Thread model: posix
+        InstalledDir: /usr/bin
+         (in-process)
+         "/usr/lib/llvm-15/bin/clang" -cc1 -triple wasm32-unknown-emscripten -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-X5gJE8 -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o -sys-header-deps -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=6 -D _LIBCPP_ABI_VERSION=2 -isysroot /usr/share/emscripten/cache/sysroot -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/local/include -internal-isystem /usr/share/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/include -Werror=implicit-function-declaration -std=gnu11 -fdebug-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-X5gJE8 -ferror-limit 19 -fvisibility default -fopenmp -pthread -fgnuc-version=4.2.1 -fignore-exceptions -iwithsysroot/include/SDL -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o -x c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-X5gJE8/OpenMPTryFlag.c
+        clang -cc1 version 15.0.7 based upon LLVM 15.0.7 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/include/wasm32-emscripten"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/share/emscripten/cache/sysroot/include/SDL
+         /usr/share/emscripten/cache/sysroot/include/compat
+         /usr/lib/llvm-15/lib/clang/15.0.7/include
+         /usr/share/emscripten/cache/sysroot/include
+        End of search list.
+        /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-X5gJE8/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+        #include <omp.h>
+                 ^~~~~~~
+        1 error generated.
+        emcc: error: '/usr/bin/clang-15 -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -fopenmp=libomp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-X5gJE8/OpenMPTryFlag.c -o CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o' failed (returned 1)
+        gmake[1]: *** [CMakeFiles/cmTC_6b266.dir/build.make:79: CMakeFiles/cmTC_6b266.dir/OpenMPTryFlag.c.o] Error 1
+        gmake[1]: Leaving directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-X5gJE8'
+        gmake: *** [Makefile:127: cmTC_6b266/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "whisper.cpp/ggml/src/ggml-cpu/CMakeLists.txt:57 (find_package)"
+      - "whisper.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-am42JC"
+      binary: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-am42JC"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "   -pthread"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -s TOTAL_STACK=5242880"
+      CMAKE_MODULE_PATH: "/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmplibiomp5"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-am42JC'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_be42e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_be42e.dir/build.make CMakeFiles/cmTC_be42e.dir/build
+        gmake[1]: Entering directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-am42JC'
+        Building C object CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o
+        /usr/bin/emcc   -pthread -fopenmp=libiomp5 -v -std=gnu11 -MD -MT CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-am42JC/OpenMPTryFlag.c
+         "/usr/bin/clang-15" -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -fopenmp=libiomp5 -v -std=gnu11 -MD -MT CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-am42JC/OpenMPTryFlag.c -o CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o
+        Ubuntu clang version 15.0.7
+        Target: wasm32-unknown-emscripten
+        Thread model: posix
+        InstalledDir: /usr/bin
+         (in-process)
+         "/usr/lib/llvm-15/bin/clang" -cc1 -triple wasm32-unknown-emscripten -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-am42JC -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o -sys-header-deps -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=6 -D _LIBCPP_ABI_VERSION=2 -isysroot /usr/share/emscripten/cache/sysroot -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/local/include -internal-isystem /usr/share/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/include -Werror=implicit-function-declaration -std=gnu11 -fdebug-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-am42JC -ferror-limit 19 -fvisibility default -fopenmp -pthread -fgnuc-version=4.2.1 -fignore-exceptions -iwithsysroot/include/SDL -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o -x c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-am42JC/OpenMPTryFlag.c
+        clang -cc1 version 15.0.7 based upon LLVM 15.0.7 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/include/wasm32-emscripten"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/share/emscripten/cache/sysroot/include/SDL
+         /usr/share/emscripten/cache/sysroot/include/compat
+         /usr/lib/llvm-15/lib/clang/15.0.7/include
+         /usr/share/emscripten/cache/sysroot/include
+        End of search list.
+        /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-am42JC/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+        #include <omp.h>
+                 ^~~~~~~
+        1 error generated.
+        emcc: error: '/usr/bin/clang-15 -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -fopenmp=libiomp5 -v -std=gnu11 -MD -MT CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-am42JC/OpenMPTryFlag.c -o CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o' failed (returned 1)
+        gmake[1]: *** [CMakeFiles/cmTC_be42e.dir/build.make:79: CMakeFiles/cmTC_be42e.dir/OpenMPTryFlag.c.o] Error 1
+        gmake[1]: Leaving directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-am42JC'
+        gmake: *** [Makefile:127: cmTC_be42e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "whisper.cpp/ggml/src/ggml-cpu/CMakeLists.txt:57 (find_package)"
+      - "whisper.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-EvYvFI"
+      binary: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-EvYvFI"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "   -pthread"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -s TOTAL_STACK=5242880"
+      CMAKE_MODULE_PATH: "/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-EvYvFI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_560fb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_560fb.dir/build.make CMakeFiles/cmTC_560fb.dir/build
+        gmake[1]: Entering directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-EvYvFI'
+        Building C object CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o
+        /usr/bin/emcc   -pthread -fopenmp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-EvYvFI/OpenMPTryFlag.c
+         "/usr/bin/clang-15" -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -fopenmp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-EvYvFI/OpenMPTryFlag.c -o CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o
+        Ubuntu clang version 15.0.7
+        Target: wasm32-unknown-emscripten
+        Thread model: posix
+        InstalledDir: /usr/bin
+         (in-process)
+         "/usr/lib/llvm-15/bin/clang" -cc1 -triple wasm32-unknown-emscripten -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-EvYvFI -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o -sys-header-deps -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=6 -D _LIBCPP_ABI_VERSION=2 -isysroot /usr/share/emscripten/cache/sysroot -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/local/include -internal-isystem /usr/share/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/include -Werror=implicit-function-declaration -std=gnu11 -fdebug-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-EvYvFI -ferror-limit 19 -fvisibility default -fopenmp -pthread -fgnuc-version=4.2.1 -fignore-exceptions -iwithsysroot/include/SDL -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o -x c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-EvYvFI/OpenMPTryFlag.c
+        clang -cc1 version 15.0.7 based upon LLVM 15.0.7 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/include/wasm32-emscripten"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/share/emscripten/cache/sysroot/include/SDL
+         /usr/share/emscripten/cache/sysroot/include/compat
+         /usr/lib/llvm-15/lib/clang/15.0.7/include
+         /usr/share/emscripten/cache/sysroot/include
+        End of search list.
+        /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-EvYvFI/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+        #include <omp.h>
+                 ^~~~~~~
+        1 error generated.
+        emcc: error: '/usr/bin/clang-15 -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -fopenmp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-EvYvFI/OpenMPTryFlag.c -o CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o' failed (returned 1)
+        gmake[1]: *** [CMakeFiles/cmTC_560fb.dir/build.make:79: CMakeFiles/cmTC_560fb.dir/OpenMPTryFlag.c.o] Error 1
+        gmake[1]: Leaving directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-EvYvFI'
+        gmake: *** [Makefile:127: cmTC_560fb/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "whisper.cpp/ggml/src/ggml-cpu/CMakeLists.txt:57 (find_package)"
+      - "whisper.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-VWX9mB"
+      binary: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-VWX9mB"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: "   -pthread"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -s TOTAL_STACK=5242880"
+      CMAKE_MODULE_PATH: "/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-VWX9mB'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dcadd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dcadd.dir/build.make CMakeFiles/cmTC_dcadd.dir/build
+        gmake[1]: Entering directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-VWX9mB'
+        Building C object CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o
+        /usr/bin/emcc   -pthread -Xclang -fopenmp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-VWX9mB/OpenMPTryFlag.c
+         "/usr/bin/clang-15" -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -Xclang -fopenmp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-VWX9mB/OpenMPTryFlag.c -o CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o
+        Ubuntu clang version 15.0.7
+        Target: wasm32-unknown-emscripten
+        Thread model: posix
+        InstalledDir: /usr/bin
+         (in-process)
+         "/usr/lib/llvm-15/bin/clang" -cc1 -triple wasm32-unknown-emscripten -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-VWX9mB -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o -sys-header-deps -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=6 -D _LIBCPP_ABI_VERSION=2 -isysroot /usr/share/emscripten/cache/sysroot -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/local/include -internal-isystem /usr/share/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/include -Werror=implicit-function-declaration -std=gnu11 -fdebug-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-VWX9mB -ferror-limit 19 -fvisibility default -pthread -fgnuc-version=4.2.1 -fignore-exceptions -iwithsysroot/include/SDL -iwithsysroot/include/compat -fopenmp -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o -x c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-VWX9mB/OpenMPTryFlag.c
+        clang -cc1 version 15.0.7 based upon LLVM 15.0.7 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/include/wasm32-emscripten"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/share/emscripten/cache/sysroot/include/SDL
+         /usr/share/emscripten/cache/sysroot/include/compat
+         /usr/lib/llvm-15/lib/clang/15.0.7/include
+         /usr/share/emscripten/cache/sysroot/include
+        End of search list.
+        /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-VWX9mB/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+        #include <omp.h>
+                 ^~~~~~~
+        1 error generated.
+        emcc: error: '/usr/bin/clang-15 -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -Xclang -fopenmp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-VWX9mB/OpenMPTryFlag.c -o CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o' failed (returned 1)
+        gmake[1]: *** [CMakeFiles/cmTC_dcadd.dir/build.make:79: CMakeFiles/cmTC_dcadd.dir/OpenMPTryFlag.c.o] Error 1
+        gmake[1]: Leaving directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-VWX9mB'
+        gmake: *** [Makefile:127: cmTC_dcadd/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "whisper.cpp/ggml/src/ggml-cpu/CMakeLists.txt:57 (find_package)"
+      - "whisper.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-7vr0mx"
+      binary: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-7vr0mx"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: " -pthread -Wno-deprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -s TOTAL_STACK=5242880"
+      CMAKE_MODULE_PATH: "/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmplibomp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-7vr0mx'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e9acd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e9acd.dir/build.make CMakeFiles/cmTC_e9acd.dir/build
+        gmake[1]: Entering directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-7vr0mx'
+        Building CXX object CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/em++   -pthread -Wno-deprecated -fopenmp=libomp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-7vr0mx/OpenMPTryFlag.cpp
+         "/usr/bin/clang++-15" -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -Wno-deprecated -fopenmp=libomp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-7vr0mx/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o
+        Ubuntu clang version 15.0.7
+        Target: wasm32-unknown-emscripten
+        Thread model: posix
+        InstalledDir: /usr/bin
+         (in-process)
+         "/usr/lib/llvm-15/bin/clang" -cc1 -triple wasm32-unknown-emscripten -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-7vr0mx -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o -sys-header-deps -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=6 -D _LIBCPP_ABI_VERSION=2 -isysroot /usr/share/emscripten/cache/sysroot -internal-isystem /usr/share/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1 -internal-isystem /usr/share/emscripten/cache/sysroot/include/c++/v1 -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/local/include -internal-isystem /usr/share/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/include -Werror=implicit-function-declaration -Wno-deprecated -std=gnu++17 -fdebug-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-7vr0mx -ferror-limit 19 -fvisibility default -fopenmp -pthread -fgnuc-version=4.2.1 -fcxx-exceptions -fignore-exceptions -fexceptions -iwithsysroot/include/SDL -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o -x c++ /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-7vr0mx/OpenMPTryFlag.cpp
+        clang -cc1 version 15.0.7 based upon LLVM 15.0.7 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/include/wasm32-emscripten"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/share/emscripten/cache/sysroot/include/SDL
+         /usr/share/emscripten/cache/sysroot/include/compat
+         /usr/share/emscripten/cache/sysroot/include/c++/v1
+         /usr/lib/llvm-15/lib/clang/15.0.7/include
+         /usr/share/emscripten/cache/sysroot/include
+        End of search list.
+        /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-7vr0mx/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+        #include <omp.h>
+                 ^~~~~~~
+        1 error generated.
+        em++: error: '/usr/bin/clang++-15 -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -Wno-deprecated -fopenmp=libomp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-7vr0mx/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o' failed (returned 1)
+        gmake[1]: *** [CMakeFiles/cmTC_e9acd.dir/build.make:79: CMakeFiles/cmTC_e9acd.dir/OpenMPTryFlag.cpp.o] Error 1
+        gmake[1]: Leaving directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-7vr0mx'
+        gmake: *** [Makefile:127: cmTC_e9acd/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "whisper.cpp/ggml/src/ggml-cpu/CMakeLists.txt:57 (find_package)"
+      - "whisper.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-0DQKB1"
+      binary: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-0DQKB1"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: " -pthread -Wno-deprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -s TOTAL_STACK=5242880"
+      CMAKE_MODULE_PATH: "/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmplibiomp5"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-0DQKB1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7c824/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7c824.dir/build.make CMakeFiles/cmTC_7c824.dir/build
+        gmake[1]: Entering directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-0DQKB1'
+        Building CXX object CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/em++   -pthread -Wno-deprecated -fopenmp=libiomp5 -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-0DQKB1/OpenMPTryFlag.cpp
+         "/usr/bin/clang++-15" -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -Wno-deprecated -fopenmp=libiomp5 -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-0DQKB1/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o
+        Ubuntu clang version 15.0.7
+        Target: wasm32-unknown-emscripten
+        Thread model: posix
+        InstalledDir: /usr/bin
+         (in-process)
+         "/usr/lib/llvm-15/bin/clang" -cc1 -triple wasm32-unknown-emscripten -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-0DQKB1 -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o -sys-header-deps -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=6 -D _LIBCPP_ABI_VERSION=2 -isysroot /usr/share/emscripten/cache/sysroot -internal-isystem /usr/share/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1 -internal-isystem /usr/share/emscripten/cache/sysroot/include/c++/v1 -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/local/include -internal-isystem /usr/share/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/include -Werror=implicit-function-declaration -Wno-deprecated -std=gnu++17 -fdebug-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-0DQKB1 -ferror-limit 19 -fvisibility default -fopenmp -pthread -fgnuc-version=4.2.1 -fcxx-exceptions -fignore-exceptions -fexceptions -iwithsysroot/include/SDL -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o -x c++ /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-0DQKB1/OpenMPTryFlag.cpp
+        clang -cc1 version 15.0.7 based upon LLVM 15.0.7 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/include/wasm32-emscripten"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/share/emscripten/cache/sysroot/include/SDL
+         /usr/share/emscripten/cache/sysroot/include/compat
+         /usr/share/emscripten/cache/sysroot/include/c++/v1
+         /usr/lib/llvm-15/lib/clang/15.0.7/include
+         /usr/share/emscripten/cache/sysroot/include
+        End of search list.
+        /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-0DQKB1/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+        #include <omp.h>
+                 ^~~~~~~
+        1 error generated.
+        em++: error: '/usr/bin/clang++-15 -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -Wno-deprecated -fopenmp=libiomp5 -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-0DQKB1/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o' failed (returned 1)
+        gmake[1]: *** [CMakeFiles/cmTC_7c824.dir/build.make:79: CMakeFiles/cmTC_7c824.dir/OpenMPTryFlag.cpp.o] Error 1
+        gmake[1]: Leaving directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-0DQKB1'
+        gmake: *** [Makefile:127: cmTC_7c824/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "whisper.cpp/ggml/src/ggml-cpu/CMakeLists.txt:57 (find_package)"
+      - "whisper.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-4h6b6l"
+      binary: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-4h6b6l"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: " -pthread -Wno-deprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -s TOTAL_STACK=5242880"
+      CMAKE_MODULE_PATH: "/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-4h6b6l'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3c5b0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3c5b0.dir/build.make CMakeFiles/cmTC_3c5b0.dir/build
+        gmake[1]: Entering directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-4h6b6l'
+        Building CXX object CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/em++   -pthread -Wno-deprecated -fopenmp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-4h6b6l/OpenMPTryFlag.cpp
+         "/usr/bin/clang++-15" -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -Wno-deprecated -fopenmp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-4h6b6l/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o
+        Ubuntu clang version 15.0.7
+        Target: wasm32-unknown-emscripten
+        Thread model: posix
+        InstalledDir: /usr/bin
+         (in-process)
+         "/usr/lib/llvm-15/bin/clang" -cc1 -triple wasm32-unknown-emscripten -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-4h6b6l -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o -sys-header-deps -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=6 -D _LIBCPP_ABI_VERSION=2 -isysroot /usr/share/emscripten/cache/sysroot -internal-isystem /usr/share/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1 -internal-isystem /usr/share/emscripten/cache/sysroot/include/c++/v1 -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/local/include -internal-isystem /usr/share/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/include -Werror=implicit-function-declaration -Wno-deprecated -std=gnu++17 -fdebug-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-4h6b6l -ferror-limit 19 -fvisibility default -fopenmp -pthread -fgnuc-version=4.2.1 -fcxx-exceptions -fignore-exceptions -fexceptions -iwithsysroot/include/SDL -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o -x c++ /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-4h6b6l/OpenMPTryFlag.cpp
+        clang -cc1 version 15.0.7 based upon LLVM 15.0.7 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/include/wasm32-emscripten"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/share/emscripten/cache/sysroot/include/SDL
+         /usr/share/emscripten/cache/sysroot/include/compat
+         /usr/share/emscripten/cache/sysroot/include/c++/v1
+         /usr/lib/llvm-15/lib/clang/15.0.7/include
+         /usr/share/emscripten/cache/sysroot/include
+        End of search list.
+        /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-4h6b6l/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+        #include <omp.h>
+                 ^~~~~~~
+        1 error generated.
+        em++: error: '/usr/bin/clang++-15 -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -Wno-deprecated -fopenmp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-4h6b6l/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o' failed (returned 1)
+        gmake[1]: *** [CMakeFiles/cmTC_3c5b0.dir/build.make:79: CMakeFiles/cmTC_3c5b0.dir/OpenMPTryFlag.cpp.o] Error 1
+        gmake[1]: Leaving directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-4h6b6l'
+        gmake: *** [Makefile:127: cmTC_3c5b0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "whisper.cpp/ggml/src/ggml-cpu/CMakeLists.txt:57 (find_package)"
+      - "whisper.cpp/ggml/src/CMakeLists.txt:299 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-3UO7pX"
+      binary: "/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-3UO7pX"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: " -pthread -Wno-deprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: " -s TOTAL_STACK=5242880"
+      CMAKE_MODULE_PATH: "/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/usr/share/emscripten/cmake/Modules;/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-3UO7pX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9c2b9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9c2b9.dir/build.make CMakeFiles/cmTC_9c2b9.dir/build
+        gmake[1]: Entering directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-3UO7pX'
+        Building CXX object CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/em++   -pthread -Wno-deprecated -Xclang -fopenmp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-3UO7pX/OpenMPTryFlag.cpp
+         "/usr/bin/clang++-15" -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -Wno-deprecated -Xclang -fopenmp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-3UO7pX/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o
+        Ubuntu clang version 15.0.7
+        Target: wasm32-unknown-emscripten
+        Thread model: posix
+        InstalledDir: /usr/bin
+         (in-process)
+         "/usr/lib/llvm-15/bin/clang" -cc1 -triple wasm32-unknown-emscripten -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-3UO7pX -resource-dir /usr/lib/llvm-15/lib/clang/15.0.7 -dependency-file CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o -sys-header-deps -D EMSCRIPTEN -D __EMSCRIPTEN_major__=3 -D __EMSCRIPTEN_minor__=1 -D __EMSCRIPTEN_tiny__=6 -D _LIBCPP_ABI_VERSION=2 -isysroot /usr/share/emscripten/cache/sysroot -internal-isystem /usr/share/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1 -internal-isystem /usr/share/emscripten/cache/sysroot/include/c++/v1 -internal-isystem /usr/lib/llvm-15/lib/clang/15.0.7/include -internal-isystem /usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/local/include -internal-isystem /usr/share/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /usr/share/emscripten/cache/sysroot/include -Werror=implicit-function-declaration -Wno-deprecated -std=gnu++17 -fdebug-compilation-dir=/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-3UO7pX -ferror-limit 19 -fvisibility default -pthread -fgnuc-version=4.2.1 -fcxx-exceptions -fignore-exceptions -fexceptions -iwithsysroot/include/SDL -iwithsysroot/include/compat -fopenmp -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o -x c++ /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-3UO7pX/OpenMPTryFlag.cpp
+        clang -cc1 version 15.0.7 based upon LLVM 15.0.7 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include/wasm32-emscripten"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/local/include"
+        ignoring nonexistent directory "/usr/share/emscripten/cache/sysroot/include/wasm32-emscripten"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/share/emscripten/cache/sysroot/include/SDL
+         /usr/share/emscripten/cache/sysroot/include/compat
+         /usr/share/emscripten/cache/sysroot/include/c++/v1
+         /usr/lib/llvm-15/lib/clang/15.0.7/include
+         /usr/share/emscripten/cache/sysroot/include
+        End of search list.
+        /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-3UO7pX/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+        #include <omp.h>
+                 ^~~~~~~
+        1 error generated.
+        em++: error: '/usr/bin/clang++-15 -target wasm32-unknown-emscripten -DEMSCRIPTEN -D__EMSCRIPTEN_major__=3 -D__EMSCRIPTEN_minor__=1 -D__EMSCRIPTEN_tiny__=6 -fignore-exceptions -fvisibility=default -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -D_LIBCPP_ABI_VERSION=2 -Werror=implicit-function-declaration -Xclang -iwithsysroot/include/SDL --sysroot=/usr/share/emscripten/cache/sysroot -Xclang -iwithsysroot/include/compat -pthread -Wno-deprecated -Xclang -fopenmp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o.d -c /home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-3UO7pX/OpenMPTryFlag.cpp -o CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o' failed (returned 1)
+        gmake[1]: *** [CMakeFiles/cmTC_9c2b9.dir/build.make:79: CMakeFiles/cmTC_9c2b9.dir/OpenMPTryFlag.cpp.o] Error 1
+        gmake[1]: Leaving directory '/home/tarn798/Kaolao/kaolao.wasm/em-build/CMakeFiles/CMakeScratch/TryCompile-3UO7pX'
+        gmake: *** [Makefile:127: cmTC_9c2b9/fast] Error 2
+        
+      exitCode: 2
+...

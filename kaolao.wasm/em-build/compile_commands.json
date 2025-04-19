@@ -1,0 +1,152 @@
+[
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build",
+  "command": "/usr/bin/em++ -DGGML_USE_CPU @CMakeFiles/common.dir/includes_CXX.rsp  -pthread -s TOTAL_STACK=5242880 -O3 -DNDEBUG -std=gnu++11 -fPIC -o CMakeFiles/common.dir/whisper.cpp/examples/common.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/examples/common.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/examples/common.cpp",
+  "output": "CMakeFiles/common.dir/whisper.cpp/examples/common.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build",
+  "command": "/usr/bin/em++ -DGGML_USE_CPU @CMakeFiles/common.dir/includes_CXX.rsp  -pthread -s TOTAL_STACK=5242880 -O3 -DNDEBUG -std=gnu++11 -fPIC -o CMakeFiles/common.dir/whisper.cpp/examples/common-ggml.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/examples/common-ggml.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/examples/common-ggml.cpp",
+  "output": "CMakeFiles/common.dir/whisper.cpp/examples/common-ggml.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build",
+  "command": "/usr/bin/em++ -DGGML_USE_CPU @CMakeFiles/common.dir/includes_CXX.rsp  -pthread -s TOTAL_STACK=5242880 -O3 -DNDEBUG -std=gnu++11 -fPIC -o CMakeFiles/common.dir/whisper.cpp/examples/grammar-parser.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/examples/grammar-parser.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/examples/grammar-parser.cpp",
+  "output": "CMakeFiles/common.dir/whisper.cpp/examples/grammar-parser.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/emcc -DGGML_SCHED_MAX_COPIES=4 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-base.dir/includes_C.rsp    -pthread -O3 -DNDEBUG -std=gnu11 -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wdouble-promotion -o CMakeFiles/ggml-base.dir/ggml.c.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml.c",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml.c",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/emcc -DGGML_SCHED_MAX_COPIES=4 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-base.dir/includes_C.rsp    -pthread -O3 -DNDEBUG -std=gnu11 -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wdouble-promotion -o CMakeFiles/ggml-base.dir/ggml-alloc.c.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-alloc.c",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-alloc.c",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-base.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-base.dir/ggml-backend.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-backend.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-backend.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-base.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-base.dir/ggml-opt.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-opt.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-opt.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-base.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-base.dir/ggml-threading.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-threading.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-threading.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/emcc -DGGML_SCHED_MAX_COPIES=4 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-base.dir/includes_C.rsp    -pthread -O3 -DNDEBUG -std=gnu11 -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wdouble-promotion -o CMakeFiles/ggml-base.dir/ggml-quants.c.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-quants.c",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-quants.c",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-base.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-base.dir/gguf.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/gguf.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/gguf.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/emcc -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-cpu.dir/includes_C.rsp    -pthread -O3 -DNDEBUG -std=gnu11 -msimd128 -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wdouble-promotion -o CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu.c",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu.c",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-cpu.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -msimd128 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-cpu.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -msimd128 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-aarch64.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu-aarch64.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu-aarch64.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-aarch64.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-cpu.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -msimd128 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-hbm.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu-hbm.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu-hbm.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-hbm.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/emcc -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-cpu.dir/includes_C.rsp    -pthread -O3 -DNDEBUG -std=gnu11 -msimd128 -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wdouble-promotion -o CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-quants.c.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu-quants.c",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu-quants.c",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-quants.c.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-cpu.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -msimd128 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-traits.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu-traits.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu-traits.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-traits.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-cpu.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -msimd128 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/amx/amx.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/amx/amx.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-cpu.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -msimd128 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/amx/mmq.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/amx/mmq.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-cpu.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -msimd128 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/binary-ops.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/binary-ops.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-cpu.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -msimd128 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/unary-ops.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/unary-ops.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-cpu.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -msimd128 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/vec.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/vec.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_AARCH64 -D_XOPEN_SOURCE=600 @CMakeFiles/ggml-cpu.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -msimd128 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ops.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ops.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/ggml/src",
+  "command": "/usr/bin/em++ -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU -D_XOPEN_SOURCE=600 @CMakeFiles/ggml.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++17 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -o CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-backend-reg.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-backend-reg.cpp",
+  "output": "whisper.cpp/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/whisper.cpp/src",
+  "command": "/usr/bin/em++ -DGGML_USE_CPU @CMakeFiles/whisper.dir/includes_CXX.rsp  -pthread -Wno-deprecated -O3 -DNDEBUG -std=gnu++11 -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -o CMakeFiles/whisper.dir/whisper.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/src/whisper.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/src/whisper.cpp",
+  "output": "whisper.cpp/src/CMakeFiles/whisper.dir/whisper.cpp.o"
+},
+{
+  "directory": "/home/tarn798/Kaolao/kaolao.wasm/em-build/src",
+  "command": "/usr/bin/em++ -DGGML_USE_CPU @CMakeFiles/kaolao.wasm.dir/includes_CXX.rsp  -pthread -s TOTAL_STACK=5242880 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/kaolao.wasm.dir/kaolao.wasm.cpp.o -c /home/tarn798/Kaolao/kaolao.wasm/src/kaolao.wasm.cpp",
+  "file": "/home/tarn798/Kaolao/kaolao.wasm/src/kaolao.wasm.cpp",
+  "output": "src/CMakeFiles/kaolao.wasm.dir/kaolao.wasm.cpp.o"
+}
+]

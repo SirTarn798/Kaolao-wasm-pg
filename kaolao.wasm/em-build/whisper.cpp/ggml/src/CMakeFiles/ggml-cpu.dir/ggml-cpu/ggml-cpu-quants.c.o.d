@@ -1,0 +1,32 @@
+whisper.cpp/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu-quants.c.o: \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu-quants.c \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/./ggml-common.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
+  /usr/share/emscripten/cache/sysroot/include/stdint.h \
+  /usr/share/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /usr/share/emscripten/cache/sysroot/include/bits/stdint.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/./ggml-quants.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/../include/ggml.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdbool.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stddef.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/__stddef_max_align_t.h \
+  /usr/share/emscripten/cache/sysroot/include/stdio.h \
+  /usr/share/emscripten/cache/sysroot/include/wasi/api.h \
+  /usr/share/emscripten/cache/sysroot/include/features.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu-quants.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/./ggml-impl.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/../include/gguf.h \
+  /usr/share/emscripten/cache/sysroot/include/assert.h \
+  /usr/share/emscripten/cache/sysroot/include/compat/math.h \
+  /usr/share/emscripten/cache/sysroot/include/math.h \
+  /usr/share/emscripten/cache/sysroot/include/compat/stdlib.h \
+  /usr/share/emscripten/cache/sysroot/include/stdlib.h \
+  /usr/share/emscripten/cache/sysroot/include/compat/string.h \
+  /usr/share/emscripten/cache/sysroot/include/string.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/ggml-cpu/ggml-cpu-impl.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/wasm_simd128.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/../include/ggml-cpu.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/../include/ggml-backend.h \
+  /home/tarn798/Kaolao/kaolao.wasm/whisper.cpp/ggml/src/../include/ggml-alloc.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/float.h \
+  /usr/share/emscripten/cache/sysroot/include/float.h

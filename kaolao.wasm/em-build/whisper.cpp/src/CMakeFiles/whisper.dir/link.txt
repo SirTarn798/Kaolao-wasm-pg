@@ -1,0 +1,2 @@
+emar qc libwhisper.a CMakeFiles/whisper.dir/whisper.cpp.o
+emranlib libwhisper.a

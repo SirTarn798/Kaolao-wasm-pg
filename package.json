@@ -1,0 +1,15 @@
+{
+  "name": "kaolao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wasm:build": "cd ./kaolao.wasm/em-build && emcmake cmake -DNO_SIMD=OFF .. && make -j",
+    "wasm:copy": "cp ./shout.wasm/em-build/bin/shout.wasm.js ./src/shout/ && cp ./shout.wasm/em-build/bin/shout.wasm.worker.mjs ./src/shout/",
+    "wasm:build-no-simd": "cd ./shout.wasm/em-build && emcmake cmake -DNO_SIMD=ON .. && make -j",
+    "wasm:copy-no-simd": "cp ./shout.wasm/em-build/bin/shout.wasm.js ./src/shout/shout.wasm_no-simd.js && cp ./shout.wasm/em-build/bin/shout.wasm.worker.mjs ./src/shout/shout.wasm.worker_no-simd.mjs"
+  },
+  "author": "",
+  "license": "ISC"
+}

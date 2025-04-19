@@ -1,0 +1,2 @@
+emar qc libcommon.a CMakeFiles/common.dir/whisper.cpp/examples/common.cpp.o "CMakeFiles/common.dir/whisper.cpp/examples/common-ggml.cpp.o" "CMakeFiles/common.dir/whisper.cpp/examples/grammar-parser.cpp.o"
+emranlib libcommon.a

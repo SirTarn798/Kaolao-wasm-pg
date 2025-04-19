@@ -1,0 +1,2 @@
+emar qc libggml.a "CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o"
+emranlib libggml.a
