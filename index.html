@@ -83,7 +83,7 @@
             console.log("starting init")
             await transcriber.init();
             console.log("init done");
-            const result = await transcriber.transcribe("/examples/jfk.wav", {
+            const result = await transcriber.transcribe("/examples/example.wav", {
               lang: "en",
             });
 
@@ -137,7 +137,7 @@
         >
       </p>
       <h2>Example File</h2>
-      <audio controls src="/examples/jfk.wav"></audio> <br />
+      <audio controls src="/examples/example.wav"></audio> <br />
       <h2>Transcribe</h2>
       <p>
         <button class="start" disabled>Start</button>
