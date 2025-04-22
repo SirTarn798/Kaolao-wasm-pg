@@ -298,8 +298,24 @@ src/CMakeFiles/kaolao.wasm.dir/kaolao.wasm.cpp.o: \
   /usr/share/emscripten/cache/sysroot/include/emscripten/val.h \
   /usr/share/emscripten/cache/sysroot/include/emscripten/wire.h \
   /usr/share/emscripten/cache/sysroot/include/c++/v1/array \
-  /usr/share/emscripten/cache/sysroot/include/c++/v1/thread \
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/sstream \
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/istream \
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/ostream \
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/bitset \
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/ios \
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/__locale \
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/mutex \
   /usr/share/emscripten/cache/sysroot/include/c++/v1/__mutex_base \
   /usr/share/emscripten/cache/sysroot/include/c++/v1/system_error \
   /usr/share/emscripten/cache/sysroot/include/c++/v1/__errc \
-  /usr/share/emscripten/cache/sysroot/include/c++/v1/cerrno
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/cerrno \
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/locale.h \
+  /usr/share/emscripten/cache/sysroot/include/locale.h \
+  /usr/share/emscripten/cache/sysroot/include/compat/xlocale.h \
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/locale \
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/cstdarg \
+  /usr/share/emscripten/cache/sysroot/include/compat/stdarg.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdarg.h \
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/streambuf \
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/__bsd_locale_fallbacks.h \
+  /usr/share/emscripten/cache/sysroot/include/c++/v1/thread

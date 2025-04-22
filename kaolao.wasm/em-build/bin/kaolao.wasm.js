@@ -867,7 +867,6 @@ var createModule = (() => {
       loadWasmModuleToWorker: function (worker, onFinishedLoading) {
         worker.onmessage = (e) => {
           var d = e["data"];
-          console.log(d);
           var cmd = d["cmd"];
           if (worker.pthread)
             PThread.currentProxiedOperationCallerThread =
@@ -917,7 +916,6 @@ var createModule = (() => {
             if (Module["onAbort"]) {
               Module["onAbort"](d["arg"]);
             }
-          
           } else if(cmd === "callHandler" && d["handler"] === "onTranscribed") {
             d["args"][0]["transcription"].map((t) => {
               out(t.text)
